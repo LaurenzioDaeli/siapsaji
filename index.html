@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu Makanan Siap Saji</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fffaf5;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    header {
+      background: #ff6b6b;
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .header-flex {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: white;
+      padding: 5px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+
+    .menu-item {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      overflow: hidden;
+    }
+
+    .menu-item img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .menu-content {
+      padding: 15px;
+      flex: 1;
+    }
+
+    .menu-content h3 {
+      margin: 0 0 8px;
+      color: #ff6b6b;
+    }
+
+    .menu-content p {
+      margin: 5px 0;
+    }
+
+    .price {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 16px;
+      background: #ff6b6b;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #e35252;
+    }
+
+    .contact, .social {
+      background: #ffe8e8;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .social a, .contact a {
+      color: #ff6b6b;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .menu-item {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .menu-item img {
+        width: 100%;
+        height: auto;
+      }
+
+      .header-flex {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-flex">
+        <img src="Hitam Merah Sederhana Rumah Makan Logo (1).png" alt="Logo Brand" class="logo">
+        <div>
+          <h1>🔥 Promo Makanan Siap Saji - #SIAPSAJIKENYANG 🔥</h1>
+          <p>Murah, Enak, Bikin Nagih!</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Menu Items -->
+    <div class="menu-item">
+      <img src="ayam geprek.jpg" alt="Ayam Geprek">
+      <div class="menu-content">
+        <h3>🍗 Ayam Geprek Original</h3>
+        <p>Ayam crispy + sambal pedas nampol!</p>
+        <p class="price">Rp15.000</p>
+        <a href="https://wa.me/6282134567890" class="btn">Beli Sekarang</a>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="burger.jpg" alt="Burger Daging">
+      <div class="menu-content">
+        <h3>🍔 Burger Daging Lumer</h3>
+        <p>Daging juicy, saus BBQ spesial!</p>
+        <p class="price">Rp18.000</p>
+        <a href="https://wa.me/6282134567890" class="btn">Beli Sekarang</a>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="mie-goreng-jawa.jpg" alt="Mie Goreng Gila">
+      <div class="menu-content">
+        <h3>🍜 Mie Goreng Gila</h3>
+        <p>Topping sosis & telur + sambal gila!</p>
+        <p class="price">Rp13.000</p>
+        <a href="https://wa.me/6282134567890" class="btn">Beli Sekarang</a>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="Nasi-Goreng-3-rotated.jpg" alt="Nasi Goreng Ayam">
+      <div class="menu-content">
+        <h3>🍛 Nasi Goreng Ayam Spesial</h3>
+        <p>Rempah khas, ayam suwir, dan telur!</p>
+        <p class="price">Rp16.000</p>
+        <a href="https://wa.me/6282134567890" class="btn">Beli Sekarang</a>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="sosis.jpg" alt="Sosis Bakar">
+      <div class="menu-content">
+        <h3>🌭 Sosis Bakar Saus Manis Pedas</h3>
+        <p>Sosis bakar smokey + saus manis pedas bikin nagih, cocok buat cemilan sore hari bareng teman!</p>
+        <p class="price">Rp7.000</p>
+        <a href="https://wa.me/6282134567890" class="btn">Beli Sekarang</a>
+      </div>
+    </div>
+
+    <!-- Kontak -->
+    <div class="contact">
+      <p>📞 Order via WhatsApp: <a href="https://wa.me/6282134567890">0821-3456-7890</a></p>
+      <p>🚚 Free Delivery sekitar kampus & kos!</p>
+    </div>
+
+    <!-- Sosial Media -->
+    <div class="social">
+      <p>📲 Follow kami untuk promo & giveaway seru!</p>
+      <p>
+        Instagram: <a href="https://instagram.com/namabrand_kamu">@namabrand_kamu</a><br>
+        Facebook: <a href="https://facebook.com/namabrand_kamu">Nama Brand Kamu Official</a><br>
+        GitHub Pages: <a href="https://laurenziodaeli.github.io/siapsaji/">Lihat Menu di GitHub Pages</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
